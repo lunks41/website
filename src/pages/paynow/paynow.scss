@@ -1,0 +1,91 @@
+.pay_now_page .pay_now_header_section .heading_text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.pay_now_page .pay_now_details .detail_heading_text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.pay_now_page .pay_now_details .order_account_coupon,
+.pay_now_page .pay_now_details .order_account_card_details {
+  background: #f5f2ed;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.pay_now_page
+  .pay_now_details
+  .order_account_coupon
+  .input-group
+  .form-control {
+  border-radius: 0;
+}
+.pay_now_page .pay_now_details .order_account_coupon .input-group .coupon_btn {
+  border-radius: 0px;
+  background: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-variant: all-small-caps;
+  color: #ffffff;
+}
+
+.pay_now_page .pay_now_details .order_account_card_details,
+.pay_now_page .pay_now_details .order_summary_details {
+  background: #f5f2ed;
+}
+
+.pay_now_page .pay_now_details .order_account_card_details .add_card_label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+.pay_now_page .pay_now_details .order_account_card_details .card_accept_label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.pay_now_page .pay_now_details .order_account_card_details .form-control {
+  border: none;
+}
+.pay_now_page .pay_now_details .order_account_card_details .form_check_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #535665;
+}
+
+.pay_now_page .pay_now_details .order_summary_details .summary_item_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.pay_now_page .pay_btn {
+  background: #000000;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  font-variant: all-small-caps;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 12px 130px;
+  text-decoration: none;
+}
+
+a.pay_btn:hover {
+  background: #f92323 !important;
+  color: #fff;
+}

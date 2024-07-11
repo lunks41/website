@@ -1,0 +1,12 @@
+.bordered-input {
+  border-radius: 50px;
+  input {
+    border-radius: 50px !important;
+    &:focus {
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-weight: 300 !important;
+    }
+  }
+}

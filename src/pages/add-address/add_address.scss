@@ -1,0 +1,96 @@
+.address_page {
+  background: #f5f2ed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.save_btn:active, .save_btn:disabled {
+  background: #4d5154 !important
+}
+
+.address_page .address_header_seciton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address_page .address_header_seciton .heading_text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.address_page .address_header_seciton .close_icon_section {
+  cursor: pointer;
+}
+
+.address_page .card_section {
+  margin-top: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px 30px 20px;
+  margin-bottom: 20px;
+}
+.address_page .card_section .card_header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address_page .card_section .card_header_section .card_header_text {
+  font-family: montserrat-bold;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #131313;
+  margin-bottom: 0;
+}
+
+.location_btn_section {
+  margin: 20px 0px 15px 0px;
+}
+.use_location_btn {
+  background: #000000;
+  border-radius: 5px;
+  padding: 7px 12px;
+  color: #fff;
+}
+.use_location_btn:focus,
+.use_location_btn:hover,
+.use_location_btn:active {
+  background: #000000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 7px 12px;
+}
+.address_page .card_section .address_heading_text {
+  font-family: montserrat-bold;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.address_page .card_section .address_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.address_page .selected_address {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 9px;
+  margin-bottom: 20px;
+}
+
+/* Mobile devices Starts*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .address_page .card_section .card_header_section .card_header_text {
+    font-family: montserrat-regular;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    margin-bottom: 0;
+  }
+}

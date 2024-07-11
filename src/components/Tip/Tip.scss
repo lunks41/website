@@ -1,0 +1,31 @@
+.hire-tip-container {
+  > div {
+    border-radius: 8px;
+    padding: 40px 13px;
+    background: #f3f3f3;
+  }
+  .find-tip {
+    height: 100%;
+    padding: 25px 10px;
+  }
+  .step {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ff0000;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #828282;
+    width: 70%;
+  }
+}

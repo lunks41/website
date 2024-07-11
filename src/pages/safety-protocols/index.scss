@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: Poppins;
+}
+
+.firstDiv {
+    z-index: 2;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.fdOne {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.fdOne img {
+    height: 100%;
+}
+
+.fdContent {
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+    text-align: left;
+    width: 40%;
+    padding: 1rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.safetyMain {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 4rem 10rem;
+    margin-bottom: 1rem;
+}
+
+.sideTags {
+    background-color: #498DAE1A;
+    width: 20%;
+    padding: 0rem;
+    text-align: center;
+}
+
+.sideTags p {
+    color: #0F80B6;
+    font-size: small;
+    margin: 0;
+}
+
+.sdContent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    color: #0F80B6;
+}
+
+
+
+@media (min-width: 1399px) and (max-width: 1600px) {
+    .fdOne {
+        height: calc(100vh - 14rem);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .safetyMain {
+        padding: 5rem 7%;
+    }
+
+    .fdContent {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .safetyMain {
+        padding: 5rem 7%;
+    }
+
+    .fdContent {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .safetyMain {
+        padding: 5rem 7%;
+    }
+
+    .fdContent {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .safetyMain {
+        padding: 5rem 7%;
+    }
+
+    .fdContent {
+        width: 80%;
+    }
+
+    .sideTags {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .safetyMain {
+        padding: 5rem 7%;
+    }
+
+    .fdContent {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1901px) {
+    .safetyMain,.fdContent  {
+        font-size: 1.5rem;
+    }
+    .fdContent  {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .fdOne {
+        height: calc(100vh - 20rem);
+    }
+}

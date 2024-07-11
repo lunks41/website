@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sideTags {
+    background-color: #498DAE1A;
+    width: 20%;
+    padding: 0rem;
+    text-align: center;
+}
+
+.sideTags p {
+    color: #0F80B6;
+    font-size: small;
+    padding: 0.3rem 0;
+    margin: 0;
+}
+
+.sdContent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    color: #0F80B6;
+}
+
+.mediaMain,
+.mediaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem 15rem;
+    margin-bottom: 1rem;
+}
+
+.mediaDiv {
+    padding: 0;
+}
+
+.mycard {
+    width: 32%;
+    max-height: 25rem;
+    border: none !important;
+    border-radius: 0.3rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.mycard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mycard button {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none !important;
+    border-radius: 0.3rem !important;
+    background: transparent !important;
+    backdrop-filter: blur(2rem);
+    padding: 0.3rem;
+    color: white;
+}
+
+.mediaCards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .mediaMain,
+    .mediaDiv {
+        padding: 5rem 10rem;
+    }
+    .mediaCards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mediaMain,
+    .mediaDiv {
+        padding: 5rem 5rem;
+    }
+    .mycard {
+        width: 45%;
+    }
+    .mediaCards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mediaMain,
+    .mediaDiv {
+        padding: 5rem 2rem;
+    }
+    .sideTags {
+        width: 30%;
+    }
+    .mycard {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .mediaCards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1901px) {
+    .mycard {
+        width: 40% !important;
+    }
+}

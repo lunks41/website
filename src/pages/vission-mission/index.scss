@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sdContent,.sdContent2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: #0F80B6;
+}
+
+.sdContent2 {
+    color: #F7B200;
+}
+
+.visAndMis {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.visAndMis,.visAndMisTwo {
+    width: 100%;
+    padding: 5rem 15rem;
+    margin-bottom: 1rem;
+}
+
+.visContent {
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.visAndMisTwo {
+    background-color: #FFFAEF;
+    margin: 0;
+}
+
+.visContentSub p {
+    font-weight: 600;
+    font-size: small;
+}
+
+.visContentCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.myCard2 {
+    padding: 20px;
+    border: 1px solid black;
+    width: 30%;
+    height: 13rem;
+    padding: 1rem;
+    box-shadow: 0px 12px 27px 0px #498DAE1A;
+}
+
+.myCardhead2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.myCardhead2 > div {
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.myCardhead2 p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.myCardContent p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: small;
+    text-align: left;
+    font-weight: normal;
+}
+
+.myCardContent > p {
+    width: 100%;
+    height: 7rem;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #F7B20026;
+    mix-blend-mode: color-burn;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track:hover {
+    background-color: #F7B20026;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #F7B20026;
+  }
+  
+  .scrollbar {
+    scrollbar-color: #F7B20026 #F7B20026;
+    scrollbar-width: thin;
+  }
+  
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .visAndMis, .visAndMisTwo {
+        padding: 3rem 10rem;
+    }
+
+    .myCard2 {
+        width: 45%;
+    }
+
+    .visContentCards {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .visAndMis, .visAndMisTwo {
+        padding: 2rem;
+    }
+
+    .visContentSub p {
+        font-size: small;
+    }
+
+    .myCard2 {
+        width: 70%;
+    }
+
+    .myCardContent p {
+        font-size: small;
+    }
+
+    .visContentCards {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1901px) {
+    .visContent p {
+        font-size: 1.5rem;
+    }
+    .myCardContent p {
+        font-size: medium;
+    }
+    .myCardhead2 p {
+        margin: 0;
+        font-size: large;
+    }
+}

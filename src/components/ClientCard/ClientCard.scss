@@ -1,0 +1,40 @@
+.client-card {
+  background: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #aeaeae;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 40px 30px;
+  height: 280px;
+  
+  p {
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: #a0a0a0;
+    height: 115px;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .client-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .client-name {
+    color: #171719;
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,253 @@
+@keyframes showIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.restaurant-container {
+  > .container {
+    > .row > div:first-child {
+      max-height: 1072px;
+      overflow-y: scroll;
+    }
+  }
+  .restaurant-pic {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+    img {
+      object-fit: cover;
+      filter: brightness(30%);
+    }
+    .restaurant-info-text {
+      min-height: 192.38px;
+      top: 45%;
+      margin-bottom: 108px;
+      margin-top: auto;
+      .restaurant-name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 120%;
+        color: #ffffff;
+        animation: 0.1s showIn ease-in;
+      }
+      .restaurant-location {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #ffffff;
+        animation: 0.1s forwards showIn ease-in;
+        margin-bottom: 40px;
+        span {
+          font-weight: 600;
+        }
+      }
+      .btn-change-options {
+        background: #fff;
+        border-radius: 50px;
+        width: 150px;
+        margin-inline: auto;
+        margin-top: auto;
+        button {
+          outline: none;
+          border: none;
+          background: #fff;
+          transition: 0.4s all ease-in;
+          padding-block: 13px;
+          min-width: 200px;
+          border-radius: 50px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000;
+          @media (max-width: 480px) {
+            min-width: 170px;
+          }
+        }
+        .btn-selected {
+          background: #f92323;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .outlet-heading {
+    margin-top: 64px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    font-variant: all-small-caps;
+    color: #171719;
+  }
+  .outlet-desc {
+    margin-bottom: 64px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #413d3d;
+  }
+  .menu-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #171719;
+    font-variant: all-small-caps;
+  }
+  .menu-desc {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #828282;
+  }
+  .menu-location {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #171719;
+    span {
+      color: #828282;
+    }
+  }
+  .our-menu {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-variant: all-small-caps;
+  }
+  .package-container {
+    .package-heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      font-variant: all-small-caps;
+      color: #000000;
+      // margin-top: 53px;
+    }
+    .package-option-btns {
+      padding-top: 53px;
+      button {
+        background: #131313;
+        padding-block: 20px;
+        border: 0;
+        border-radius: 8px;
+        outline: 0;
+        min-width: 255px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        font-variant: all-small-caps;
+        color: #ffffff;
+      }
+    }
+  }
+  .menu-container {
+    padding-bottom: 0;
+  }
+  .restaurant-item-container {
+    margin-top: 60px;
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 35px;
+      letter-spacing: 0.01em;
+      font-variant: all-small-caps;
+      color: #171719;
+      margin-bottom: 40px;
+    }
+  }
+  .ratings {
+    padding-top: 80px;
+    .heading {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    .rate {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0.01em;
+      color: #000000;
+    }
+    .count {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #828282;
+    }
+  }
+  .total-reviews {
+    border: 0.5px solid #aeaeae;
+    .total-count {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      font-variant: all-small-caps;
+      color: #4a82f1;
+    }
+    button {
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  /* Override button styles to change the color to red */
+  .restaurant-pic {
+    height: 600px !important;
+    img {
+      filter: brightness(30%);
+    }
+    .restaurant-info-text {
+      margin-bottom: 100px !important;
+      padding: 10px !important;
+      margin-top: 100px !important;
+      .restaurant-name {
+        font-size: 34px !important;
+      }
+    }
+  }
+}
+.carousel {
+  width: 100%;
+}

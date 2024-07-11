@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sideTags {
+    background-color: #498DAE1A;
+    width: 20%;
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+.sideTags p {
+    color: #0F80B6;
+    font-size: small;
+    margin: 0;
+}
+
+.sdContent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    color: #0F80B6;
+}
+
+.agencyMain {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 5rem 10rem;
+    margin-bottom: 1rem;
+}
+
+.backButton {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.backButton button {
+    border: none;
+    border-radius: 0.1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .agencyMain {
+        padding: 5rem 2rem;
+    }
+    
+    .sideTags {
+        width: 100%;
+    }
+    
+    .servicesImages img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .agencyMain {
+        padding: 5rem 1rem;
+    }
+    
+    .sdContent {
+        font-size: 1.2rem;
+    }
+    
+    .srvContent {
+        font-size: 0.9rem;
+    }
+}

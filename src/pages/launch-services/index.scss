@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sideTags {
+    background-color: #498DAE1A;
+    width: 20%;
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+.sideTags p {
+    color: #0F80B6;
+    font-size: small;
+    margin: 0;
+}
+
+.sdContent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    color: #0F80B6;
+}
+
+.boatMain {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 5rem 10rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 48%;
+    height: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+    // height: 55px;
+}
+
+tbody {
+    border-collapse: collapse;
+}
+
+thead td {
+    border: none;
+    text-align: left;
+    color: #0F80B6;
+}
+
+.cardsAndTable {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.shipCards,.myPagination {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shipCardsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.shipCardsDiv img {
+    width: 48%;
+}
+
+.pagination li a {
+    border: none !important;
+    font-size: x-small;
+}
+
+.previous {
+    background-color: #EAE5FF;
+    color: black !important;
+}
+
+.nextele {
+    background-color: #0F80B6;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.buttonsDiv button {
+    background-color: #2AE6F226;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: x-small;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttonsDiv button:hover {
+    background-color: #0F80B6;
+    color: white;
+}
+
+.buttonsDiv button:active {
+    background-color: #0F80B6;
+    color: white;
+}
+
+.buttonsDiv button::after {
+    background-color: #0F80B6;
+    color: white;
+}
+
+.selectedBtn {
+    background-color: #0F80B6!important;
+    color: white!important;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    .boatMain {
+        padding: 5rem 3%;
+    }
+
+    .sideTags {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sideTags {
+        display: none;
+    }
+
+    .boatMain {
+        padding: 5rem 2%;
+    }
+
+    .shipCards, .myPagination {
+        width: 100%;
+    }
+
+    .cardsAndTable {
+        flex-direction: column;
+    }
+
+    .cardsAndTable table {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .shipCardsDiv img {
+        width: 60%;
+    }
+
+    .buttonsDiv {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .boatMain {
+        padding: 5rem 10%;
+        font-size: 1.8rem;
+    }
+
+    .sideTags {
+        width: auto;
+    }
+}
+@media screen and (min-width: 1901px) {
+    .boatMain {
+        font-size: 2rem;
+    }
+}
+

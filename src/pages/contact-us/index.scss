@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sideTags {
+    background-color: #498DAE1A;
+    width: 20%;
+    padding: 0rem;
+    text-align: center;
+}
+
+.sideTags p {
+    color: #0F80B6;
+    font-size: small;
+    margin: 0;
+}
+
+.sdContent {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    color: #0F80B6;
+    text-align: center;
+}
+
+.sdContent b {
+    font-weight: 600 !important;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 5rem 15rem;
+    margin-bottom: 1rem;
+}
+
+.contactCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.myCard {
+    width: 48%;
+    height: fit-content;
+    border-radius: 0.5rem;
+}
+
+.myCardhead {
+    background-color: #0F80B6;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: small;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.myCardhead p{
+    margin: 0;
+    font-size: small;
+}
+
+.myCardPara p {
+    margin: 0px !important;
+    font-size: 12px;
+    padding-left: 1.5rem;
+}
+
+.cardContent {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.cardContent p {
+    font-size: small;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.cardBody {
+    background-color: #EBF9FF;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.locationMark {
+    width: 4rem;
+    height: 4rem;
+}
+
+.cardBody > .addressDiv {
+    width: 95% !important;
+}
+
+.formMain {
+    width: 100%;
+    background: linear-gradient(180deg, #EA8C00 0%, #F7B200 100%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.formDiv {
+    background-color: white;
+    width: 45%;
+    height: auto !important;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: black;
+}
+
+.formDiv p {
+    font-size: small;
+}
+
+.formElements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    border-radius: 0.3rem;
+    font-size: small;
+}
+
+.cName,.cName input {
+    width: 100%;
+    font-size: small;
+    padding: 0.3rem;
+}
+
+.cName input {
+    font-size: 0.75rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+.submitDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitDiv button {
+    font-weight: 600;
+    font-size: small;
+    color: white;
+    background-color: #F7B200;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+
+
+@media screen and (min-width: 1901px) {
+    .contactUs {
+        font-size: 3rem;
+    }
+    .myCardPara p {
+        font-size: 12px;
+    }
+    .myCardhead p,.formDiv p {
+        margin: 0;
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .contactUs {
+        padding: 5rem 10rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contactUs {
+        padding: 5rem 8rem;
+    }
+
+    .myCard {
+        width: 80%;
+    }
+
+    .formDiv {
+        width: 60%;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactUs {
+        padding: 5rem 5rem;
+    }
+
+    .myCard {
+        width: 80%;
+    }
+
+    .formDiv {
+        width: 60%;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactUs {
+        padding: 5rem 3rem;
+    }
+
+    .myCard {
+        width: 80%;
+    }
+
+    .formDiv {
+        width: 70%;
+        height: auto !important;
+    }
+    .whatsapp {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contactUs {
+        padding: 5rem 1rem;
+    }
+
+    .myCard {
+        width: 80%;
+    }
+
+    .formDiv {
+        width: 80%;
+        height: auto !important;
+    }
+
+    .formDiv p {
+        font-size: x-small;
+    }
+
+    .cName input {
+        font-size: 0.65rem;
+    }
+
+    .submitDiv button {
+        padding: 0.5rem 1rem;
+        font-size: x-small;
+    }
+    .formMain {
+        padding: 0.5rem;
+    }
+    .myCardmiddle  {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContentMain {
+        width: 100% !important;
+    }
+    .sideTags {
+        padding: 0.5rem 1rem;
+        width: 40%;
+    }
+}

@@ -1,0 +1,55 @@
+.select-btn {
+  .selected {
+    color: #000;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.233) !important;
+    img {
+      opacity: 1;
+    }
+  }
+  button {
+    border: none;
+    outline: 0;
+    background: #fff;
+    border: 1px solid #ccbfdd;
+    padding: 25px 50px;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 100%;
+    color: #ccbfdd;
+    transition: 0.3s all ease;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+    &:hover {
+      color: #000;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.233) !important;
+      // img {
+      //   opacity: 1;
+      // }
+    }
+    img {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      opacity: 0;
+      transition: 0.2s all ease-in;
+    }
+    .capacity-heading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      font-variant: all-small-caps;
+    }
+    .capacity-price {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      font-variant: all-small-caps;
+      color: #f92323;
+    }
+  }
+}

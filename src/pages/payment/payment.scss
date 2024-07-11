@@ -1,0 +1,191 @@
+.payment_method_body {
+  background: #f5f2ed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.payment_method_body .payment_main .payment_header label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.payment_method_body .payment_main .payment_header .payment_card {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_order_id {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #333333;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_order_datetime {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #4f9807;
+}
+.payment_method_body .payment_main .payment_header .payment_card .wallet_label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .wallet_card_section
+  .wallet_card {
+  width: 200.16px;
+  height: 129px;
+  border: 0.5px solid #333333;
+  border-radius: 5px;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .wallet_card_section
+  .wallet_card
+  .amazon_wallet_label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .wallet_card_section
+  .wallet_card
+  .amazon_pay_btn {
+  width: 122px;
+  height: 41px;
+  background: #4f9807;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .wallet_card_section
+  .wallet_card
+  .link_btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2b21a;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .wallet_account_label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .payment_add_card_label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .payment_card_accept_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #535665;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .form-control {
+  background: #f2f8fa;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #535665;
+  border: none;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .form_check_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #535665;
+}
+.payment_method_body
+  .payment_main
+  .payment_header
+  .payment_card
+  .payment_account_card_details
+  .pay_btn {
+  width: 100%;
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-variant: all-small-caps;
+  color: #ffffff;
+}
+
+.modal .modal-dialog .modal-content {
+  height: auto;
+}
+.modal .modal-dialog .thank_label {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #130f26;
+}
+.modal .modal-dialog .track_btn {
+  height: 37px;
+  min-width: 200px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: #000;
+  opacity: 1 !important;
+}

@@ -1,0 +1,37 @@
+.menu-item-container {
+  background: #f3f3f3;
+  border-radius: 5px;
+  h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    font-variant: all-small-caps;
+    color: #171719;
+  }
+  hr {
+    margin-block: 12px !important;
+  }
+  .channge-menu-accordion {
+    background: transparent;
+    border: none;
+  }
+  .change-menu-btn,
+  .category-name {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 160%;
+    color: #171719;
+  }
+  .category-item {
+    color: #828282;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+}

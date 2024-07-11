@@ -1,0 +1,24 @@
+/* Desktops, extra-large screens Starts */
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+}
+
+/* Desktops, large screens Starts */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Small screens, laptops Starts */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* iPads, Tablets Starts */
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Mobile devices Starts*/
+
+@media (min-width: 320px) and (max-width: 600px) {
+}

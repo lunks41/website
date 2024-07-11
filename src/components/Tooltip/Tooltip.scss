@@ -1,0 +1,15 @@
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000; /* Ensure it appears above other elements */
+
+  :hover {
+    visibility: visible;
+    display: block;
+  }
+}

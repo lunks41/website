@@ -1,0 +1,191 @@
+.page-add-review {
+  background: #f5f2ed;
+  padding-block: 50px;
+  .heading {
+    .heading-text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+    }
+  }
+  .product-card {
+    background: #fff;
+    padding: 24px 40px;
+    border-radius: 16px;
+    .product-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 5px;
+    }
+    .product-name {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: #171719;
+    }
+    .product-detail,
+    .product-supplier {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 120%;
+      color: rgba(23, 23, 25, 0.8);
+    }
+    .product-price {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+    }
+    .order-info {
+      > div {
+        min-width: 250px;
+      }
+      .order-number {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
+      }
+      .delivery-date {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #4f9807;
+      }
+    }
+  }
+  .add-attachments {
+    padding: 56px 24px;
+    background: #fff;
+    border-radius: 16px;
+    .btn-delete {
+      top: -7px;
+      right: -5px;
+      font-size: 16px;
+      font-weight: 500;
+      background: none;
+      display: flex;
+      justify-content: center;
+      color: white;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #000000b0;
+    }
+    .attachments {
+      img, video {
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0 #0000004b;
+      }
+    }
+    .add-text {
+      h4 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        color: #171719;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        color: #707070;
+      }
+    }
+    button.btn-add {
+      border: 0.5px solid #171719;
+      border-radius: 5px;
+      background: #fff;
+      color: #ff0000;
+      min-height: 30px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 120%;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .review-form {
+    padding: 40px 24px;
+    background: #fff;
+    border-radius: 16px;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    margin-bottom: 48px;
+    h4 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 120%;
+      color: #171719;
+    }
+    textarea {
+      border: 0.5px solid #707070;
+      border-radius: 8px;
+      outline: none;
+      color: #171719;
+      resize: none;
+      padding: 8px 10px;
+      min-height: 100px;
+    }
+  }
+  .btn-rate {
+    background: none;
+    border: none;
+    outline: 0;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .submit-review {
+    .btn-submit {
+      background: #000;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      width: 335px;
+      min-height: 48px;
+      letter-spacing: 0.01em;
+      border-radius: 5px;
+      color: #ffffff;
+      border: none;
+      transition: 0.1s all ease-out;
+      &:hover {
+        box-shadow: 0 0 10px 1px #00000083;
+      }
+      &:active, &:disabled {
+        border: none;
+        background: #4d5154;
+      }
+      @media (max-width: 576px) {
+        width: 150px;
+      }
+    }
+  }
+}
