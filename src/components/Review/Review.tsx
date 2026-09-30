@@ -1,9 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-
-const NewModalGateway: any = ModalGateway;
 
 import "./Review.scss";
 
@@ -59,20 +56,35 @@ export default function Review(props: any) {
         {photos.length > 0 && (
           <>
             <Gallery photos={photos} onClick={openLightbox} />
-            <NewModalGateway>
-              {viewerIsOpen ? (
-                <Modal onClose={closeLightbox}>
-                  <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map((x: any) => ({
-                      ...x,
-                      srcset: x.srcSet,
-                      caption: x.title,
-                    }))}
-                  />
-                </Modal>
-              ) : null}
-            </NewModalGateway>
+            {viewerIsOpen && photos[currentImage] && (
+              <div
+                className="review-lightbox"
+                role="dialog"
+                aria-modal="true"
+                onClick={closeLightbox}
+                style={{
+                  position: "fixed",
+                  inset: 0,
+                  zIndex: 9999,
+                  background: "rgba(0,0,0,0.85)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "zoom-out",
+                }}
+              >
+                <img
+                  src={photos[currentImage].src}
+                  alt=""
+                  onClick={(e) => e.stopPropagation()}
+                  style={{
+                    maxWidth: "90vw",
+                    maxHeight: "90vh",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+            )}
           </>
         )}
         {videos.length > 0 &&
@@ -92,16 +104,6 @@ export default function Review(props: any) {
       </div>
       <div className="review-footer d-flex align-items-center justify-content-between">
         <span className="review-date">{props?.reviewDate}</span>
-        {/* <div className="d-flex align-items-center gap-4">
-          <div className="upvote d-flex align-items-center gap-2">
-            <img src="/images/icons/upvote.svg" alt="upvote" />
-            {props?.upvotes}
-          </div>
-          <div className="downvote d-flex align-items-center gap-2">
-            <img src="/images/icons/downvote.svg" alt="downvote" />
-            {props?.downvotes}
-          </div>
-        </div> */}
       </div>
     </div>
   );
