@@ -1,6 +1,6 @@
 export default function getConfig() {
   let token = ""
-  if (process.browser) {
+  if (typeof window !== "undefined") {
     token =
       JSON.parse(localStorage.getItem("login_data")!)?.token ||
       JSON.parse(localStorage.getItem("login_data")!)?.stsTokenManager

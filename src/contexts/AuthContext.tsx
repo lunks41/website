@@ -61,12 +61,12 @@ const AuthContextProvider = (props: any) => {
     }
   }
 
-  if (process.browser) {
+  if (typeof window !== "undefined") {
     loginData = localStorage.getItem("login_data")
   }
 
   const doSetUser = (data: any) => {
-    if (process.browser) {
+    if (typeof window !== "undefined") {
       localStorage.removeItem("login_data")
       localStorage.setItem("login_data", JSON.stringify(data))
       setIsAuthenticated(true)
@@ -77,7 +77,7 @@ const AuthContextProvider = (props: any) => {
     }
   }
   const logOut = () => {
-    if (process.browser) {
+    if (typeof window !== "undefined") {
       localStorage.removeItem("login_data")
       loginData = null
       socket?.destroy()
