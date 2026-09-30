@@ -18,8 +18,6 @@ import {
   DropdownItem,
 } from "reactstrap"; // Import the necessary components from your library
 
-import type { JwtPayload } from "jsonwebtoken";
-// import { Link as RouterLink } from 'react-router-dom';
 import moment from "moment";
 
 import {
@@ -50,7 +48,6 @@ import {
   updateNotification,
 } from "@/api/notification";
 import axios from "axios";
-import jwt from "jsonwebtoken";
 
 const FORMDATA_KEY = {
   EMAIL: "email",

@@ -1,6 +1,5 @@
 import axios from "axios"
 import getConfig from "../config/axios";
-import { data } from "jquery";
 
 
 export const getTerms = async () => {
