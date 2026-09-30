@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
+
 const nextConfig = {
-  // disable css-modules component styling
+  // Next 16 defaults to Turbopack; keep empty turbopack block so builds with a webpack() hook are explicit.
+  turbopack: {},
   images: {
     remotePatterns: [
       {
@@ -12,6 +14,7 @@ const nextConfig = {
       },
     ],
   },
+  // Used when building with `next build --webpack` (see package.json scripts).
   webpack(config) {
     config.module.rules.forEach((rule) => {
       const { oneOf } = rule;
@@ -21,9 +24,9 @@ const nextConfig = {
           one.issuer.and = [path.resolve(__dirname)];
         });
       }
-    })
+    });
     return config;
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

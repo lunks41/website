@@ -4,7 +4,6 @@ import {
   useContext,
   ChangeEvent,
   useRef,
-  RefObject,
 } from "react";
 import { AuthContext } from "@/contexts/AuthContext";
 import {
@@ -30,7 +29,7 @@ export default function Account() {
   const [selectedName, setSelectedName] = useState<string>("");
   const [selectedEmail, setSelectedEmail] = useState<string>("");
   const [imageFile, setImageFile] = useState<File | undefined>(undefined);
-  const imageUploader: RefObject<HTMLInputElement> = useRef(null);
+  const imageUploader = useRef<HTMLInputElement>(null);
   const [currentType, setCurrentType] = useState<string>("password");
   const [newType, setNewType] = useState<string>("password");
   const [confirmType, setConfirmType] = useState<string>("password");

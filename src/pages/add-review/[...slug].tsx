@@ -34,13 +34,13 @@ export default function AddReview() {
   const router = useRouter();
   const { slug }: any = router.query;
   const [itemIndex, setItemIndex] = useState<number>(-1);
-  const videoFileBtnRef: any = useRef();
-  const imageFileBtnRef: any = useRef();
+  const videoFileBtnRef = useRef<HTMLInputElement>(null);
+  const imageFileBtnRef = useRef<HTMLInputElement>(null);
   const { updateTransparentHeader } = useContext<any>(ParamContext);
 
   let formData: any;
 
-  if (process.browser) {
+  if (typeof window !== "undefined") {
     formData = new FormData();
   }
 
@@ -204,10 +204,10 @@ export default function AddReview() {
 
   const handleUploadBtnClick = (type: string) => {
     if (type === "image") {
-      imageFileBtnRef.current.click();
+      imageFileBtnRef.current?.click();
       return;
     }
-    videoFileBtnRef.current.click();
+    videoFileBtnRef.current?.click();
   };
 
   return (
