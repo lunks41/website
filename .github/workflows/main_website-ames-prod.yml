@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "archipelago/**"
+      - ".github/workflows/main_website-ames-prod.yml"
   workflow_dispatch:
 
 # Single job: avoids GitHub Actions artifact storage quota
@@ -17,6 +20,10 @@ jobs:
       id-token: write
       contents: read
 
+    defaults:
+      run:
+        working-directory: archipelago
+
     steps:
       - uses: actions/checkout@v4
 
@@ -26,6 +33,7 @@ jobs:
           # Match Azure App Service WEBSITE_NODE_DEFAULT_VERSION (~22)
           node-version: "22.x"
           cache: npm
+          cache-dependency-path: archipelago/package-lock.json
 
       - name: npm install and build
         env:
@@ -64,7 +72,7 @@ jobs:
         with:
           app-name: "website-ames-prod"
           slot-name: "Production"
-          package: .
+          package: archipelago
           scm-do-build-during-deployment: false
           enable-oryx-build: false
 
