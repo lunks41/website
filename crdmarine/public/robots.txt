@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crdmarine.ae/sitemap.xml
