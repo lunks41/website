@@ -1,19 +1,4 @@
 User-agent: *
 Allow: /
 
-# Private / transactional areas
-Disallow: /account
-Disallow: /address
-Disallow: /add-address
-Disallow: /edit-address
-Disallow: /payment
-Disallow: /paynow
-Disallow: /pending_order
-Disallow: /favorites
-Disallow: /enter-details
-Disallow: /trackorder
-Disallow: /add-review
-Disallow: /search
-Disallow: /menu
-
 Sitemap: https://archipelago.ae/sitemap.xml
